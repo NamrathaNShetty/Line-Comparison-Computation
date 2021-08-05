@@ -1,7 +1,5 @@
 package com.bridgelabz;
 
-import java.sql.SQLOutput;
-
 public class LineComparision {
 
     public static void main(String[] args) {
