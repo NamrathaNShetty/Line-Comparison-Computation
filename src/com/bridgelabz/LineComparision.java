@@ -1,5 +1,7 @@
 package com.bridgelabz;
 
+import java.sql.SQLOutput;
+
 public class LineComparision {
 
     public static void main(String[] args) {
@@ -8,9 +10,9 @@ public class LineComparision {
         int y1 = 8;
         int y2 = 89;
         int p1 = 14;
-        int p2 = 16;
+        int p2 = 25;
         int q1 = 4;
-        int q2 = 85;
+        int q2 = 110;
 
         double lengthOfLine1 = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
         double lengthOfLine2 = Math.sqrt((p2 - p1) * (p2 - p1) + (q2 - q1) * (q2 - q1));
@@ -18,9 +20,16 @@ public class LineComparision {
         System.out.println(lengthOfLine1);
         System.out.println(lengthOfLine2);
 
-        if(lengthOfLine1 == lengthOfLine2)
-            System.out.println("Lines are equal");
+        if(lengthOfLine1>lengthOfLine2)
+            System.out.println("Length of Line1 is greater than Length of Line2");
+        else if(lengthOfLine1<lengthOfLine2)
+            System.out.println("Length of Line1 is lesser than Length of Line2");
         else
-            System.out.println("Lines are not equal");
+            System.out.println("Both lines are Equal");
+
+
+
+
+
     }
 }
